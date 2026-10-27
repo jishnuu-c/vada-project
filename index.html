@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="ml">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- SEO & Meta Tags -->
+  <title>മണിവട | ചൂട് ചൂട് വടേ — South Indian Tea & Vada</title>
+  <meta name="description" content="നല്ല ചായയും തമിഴ് ശൈലിയിലുള്ള രുചികരമായ വടയും. മണിവട - ചൂട് ചൂട് വടേ! Authentic South Indian tea-kadai snacks and piping hot chai." />
+  <meta name="keywords" content="Mani Vada, മണിവട, ചൂട് ചൂട് വടേ, tea shop, vada, kerala tea kadai, tamil tea stall, parippu vada, medu vada, pazham pori, chai" />
+  <meta name="author" content="Mani Vada" />
+  <meta name="theme-color" content="#123D2C" />
+
+  <!-- OpenGraph / Social Meta -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="മണിവട | ചൂട് ചൂട് വടേ" />
+  <meta property="og:description" content="നല്ല ചായയും തമിഴ് ശൈലിയിലുള്ള രുചികരമായ വടയും. ഓരോ ദിവസവും നിങ്ങളുടെ ചായസമയത്തിന് ഒരു നാടൻ സന്തോഷം." />
+  <meta property="og:image" content="/images/mani-vada-logo.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="apple-touch-icon" href="/favicon.png" />
+
+  <!-- Google Fonts for Malayalam, Tamil, and Latin Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manjari:wght@400;700&family=Noto+Sans+Malayalam:wght@400;500;600;700;800&family=Noto+Sans+Tamil:wght@400;600;700&family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/src/styles/variables.css" />
+  <link rel="stylesheet" href="/src/styles/base.css" />
+  <link rel="stylesheet" href="/src/styles/components.css" />
+  <link rel="stylesheet" href="/src/styles/layout.css" />
+  <link rel="stylesheet" href="/src/styles/responsive.css" />
+</head>
+<body id="home">
+
+  <!-- ==============================================
+       HEADER & NAVIGATION BAR
+       ============================================== -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <!-- Brand Logo & Title -->
+      <a href="#home" class="brand-link" aria-label="മണിവട ഹോംപേജ്">
+        <img 
+          src="/images/mani-vada-logo.png" 
+          alt="മണിവട ലോഗോ - ചൂട് ചൂട് വടേ" 
+          class="brand-logo-img"
+          width="62"
+          height="62"
+        />
+        <div class="brand-text-group">
+          <div class="brand-title-row">
+            <span class="brand-malayalam-name">മണിവട</span>
+            <span class="brand-tamil-badge">மணி வடை</span>
+          </div>
+          <span class="brand-tagline-mini">ചൂട് ചൂട് വടേ</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu-wrapper" aria-label="പ്രധാന നാവിഗേഷൻ">
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#menu" class="nav-link">ഞങ്ങളുടെ മെനു</a></li>
+          <li><a href="#about" class="nav-link">ഞങ്ങളെക്കുറിച്ച്</a></li>
+          <li><a href="#gallery" class="nav-link">കാഴ്ചകൾ</a></li>
+          <li><a href="#visit" class="nav-link">ഞങ്ങളെ കണ്ടെത്താം</a></li>
+        </ul>
+      </nav>
+
+      <!-- Tasteful Green Button -->
+      <div class="nav-actions">
+        <a href="#visit" class="btn btn-primary btn-header-cta">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+          </svg>
+          കടയിലേക്ക് വരൂ
+        </a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="mobile-toggle" id="mobileToggle" aria-label="മെനു തുറക്കുക">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+  <aside class="mobile-drawer" id="mobileDrawer">
+    <div>
+      <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 30px;">
+        <img src="/images/mani-vada-logo.png" alt="മണിവട" style="width: 52px; height: 52px; border-radius: 12px; object-fit: contain; background-color: #FAF7EE; border: 1px solid rgba(198, 161, 91, 0.35);" />
+        <div>
+          <div style="font-family: var(--font-malayalam); font-size: 1.4rem; font-weight: 800; color: var(--color-deep-forest);">മണിവട</div>
+          <div style="font-family: var(--font-malayalam); font-size: 0.85rem; color: var(--color-primary-green);">ചൂട് ചൂട് വടേ</div>
+        </div>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="#home" class="mobile-nav-link">Home</a></li>
+        <li><a href="#menu" class="mobile-nav-link">ഞങ്ങളുടെ മെനു</a></li>
+        <li><a href="#about" class="mobile-nav-link">ഞങ്ങളെക്കുറിച്ച്</a></li>
+        <li><a href="#gallery" class="mobile-nav-link">കാഴ്ചകൾ</a></li>
+        <li><a href="#visit" class="mobile-nav-link">ഞങ്ങളെ കണ്ടെത്താം</a></li>
+      </ul>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 12px;">
+      <a href="#visit" class="btn btn-primary" style="width: 100%;">
+        കടയിലേക്ക് വരൂ
+      </a>
+      <div style="text-align: center; font-size: 0.85rem; color: var(--color-text-light);">
+        തമിഴ് സ്റ്റൈൽ ചായയും ചൂടൻ വടകളും
+      </div>
+    </div>
+  </aside>
+
+  <!-- ==============================================
+       4. HERO SECTION — IMPRESSIVE FIRST SCREEN
+       ============================================== -->
+  <section class="hero-section">
+    <div class="container hero-grid">
+      <!-- Left Content -->
+      <div class="hero-content">
+        <div class="hero-badge-pill">
+          <span class="hero-badge-dot"></span>
+          <span class="hero-badge-text">തനത് സൗത്ത് ഇന്ത്യൻ ചായക്കട അനുഭവം</span>
+        </div>
+
+        <h1 class="hero-heading">ഒരു ചായ… ഒരു വട…</h1>
+        
+        <div class="hero-subheading">
+          <span>ചൂട് ചൂട് വടേ!</span>
+          <span class="hero-subheading-tag">சுடச்சுட வடை</span>
+        </div>
+
+        <p class="hero-description">
+          നല്ല ചായയും തമിഴ് ശൈലിയിലുള്ള രുചികരമായ വടയും. ഓരോ ദിവസവും നിങ്ങളുടെ ചായസമയത്തിന് ഒരു നാടൻ സന്തോഷം.
+        </p>
+
+        <!-- Buttons -->
+        <div class="hero-cta-group">
+          <a href="#menu" class="btn btn-primary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+              <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+              <line x1="6" y1="1" x2="6" y2="4"></line>
+              <line x1="10" y1="1" x2="10" y2="4"></line>
+              <line x1="14" y1="1" x2="14" y2="4"></line>
+            </svg>
+            ഞങ്ങളുടെ മെനു കാണാം
+          </a>
+          <a href="#visit" class="btn btn-secondary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
+            </svg>
+            കടയിലേക്കുള്ള വഴി
+          </a>
+        </div>
+
+        <!-- Hero Features Bar -->
+        <div class="hero-features-bar">
+          <div class="hero-feature-item">
+            <span class="hero-feature-icon">✦</span>
+            <span>തമിഴ് നാടൻ രുചി</span>
+          </div>
+          <div class="hero-feature-item">
+            <span class="hero-feature-icon">✦</span>
+            <span>നല്ല ചൂടുള്ള ചായ</span>
+          </div>
+          <div class="hero-feature-item">
+            <span class="hero-feature-icon">✦</span>
+            <span>മൊരിഞ്ഞ പലഹാരങ്ങൾ</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Visual Composition -->
+      <div class="hero-visual-wrap">
+        <div class="hero-card-stack">
+          <!-- Main Food Photography Frame -->
+          <div class="hero-main-photo-frame">
+            <img 
+              src="/images/hero-food.jpg" 
+              alt="തമിഴ് സ്റ്റൈൽ ചൂടുള്ള ചായയും മൊരിഞ്ഞ വടയും" 
+              class="hero-main-photo"
+              width="600"
+              height="440"
+            />
+          </div>
+
+          <!-- Prominent Floating Logo Emblem -->
+          <div class="hero-floating-emblem" title="മണിവട ഔദ്യോഗിക മുദ്ര">
+            <img 
+              src="/images/mani-vada-logo.png" 
+              alt="മണിവട ലോഗോ - ചൂട് ചൂട് വടേ" 
+              width="160"
+              height="160"
+            />
+          </div>
+
+          <!-- Floating Snack Highlight Pill -->
+          <div class="hero-floating-pill">
+            <div class="hero-pill-icon">♨</div>
+            <div>
+              <div class="hero-pill-text">ചൂടോടെ വിളമ്പുന്നു</div>
+              <div class="hero-pill-sub">Fresh Batch Ready</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================================
+       5. SIGNATURE MENU SECTION
+       ============================================== -->
+  <section class="section section-white" id="menu">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">തനത് വിഭവങ്ങൾ</span>
+        <h2 class="section-title">ഞങ്ങളുടെ സ്പെഷ്യൽ വിഭവങ്ങൾ</h2>
+        <p class="section-subtitle">
+          നല്ല കടുപ്പമുള്ള ചായയ്ക്കൊപ്പം കഴിക്കാൻ ഏറ്റവും മികച്ച തമിഴ്-കേരള നാടൻ പലഹാരങ്ങൾ.
+        </p>
+        <div class="brand-ornament">
+          <span class="brand-ornament-line"></span>
+          <span class="brand-ornament-leaf">🌿</span>
+          <span class="brand-ornament-line reverse"></span>
+        </div>
+      </div>
+
+      <!-- Dynamic Menu Grid -->
+      <div class="menu-grid" id="menuContainer">
+        <!-- Rendered dynamically by main.js from menuData.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================================
+       6. OUR STORY SECTION
+       ============================================== -->
+  <section class="section section-cream" id="about">
+    <div class="container story-grid">
+      <!-- Story Image Frame -->
+      <div class="story-image-frame">
+        <img 
+          src="/images/gallery-tea-stall.jpg" 
+          alt="മണിവട നാടൻ ചായക്കട അന്തരീക്ഷം" 
+          class="story-image"
+          width="600"
+          height="480"
+        />
+        <div class="story-quote-card">
+          <div class="story-quote-text">
+            “ഒരു ഗ്ലാസ് ചൂട് ചായയും നല്ല മൊരിഞ്ഞ വടയും നൽകുന്ന ആശ്വാസം മറ്റൊന്നിനും നൽകാനാവില്ല.”
+          </div>
+        </div>
+      </div>
+
+      <!-- Editorial Story Content -->
+      <div class="story-content">
+        <span class="section-eyebrow" style="align-self: flex-start;">ഞങ്ങളുടെ കഥ</span>
+        <h2 class="story-title">മണിവട — നാടൻ രുചിയുടെ സ്വന്തം ഇടം</h2>
+        
+        <div class="story-paragraphs">
+          <p>
+            ദക്ഷിണേന്ത്യൻ ചായക്കടകളുടെ പാരമ്പര്യത്തിൽ നിന്നും പ്രചോദനം ഉൾക്കൊണ്ടാണ് മണിവട ആരംഭിക്കുന്നത്. നല്ല ചൂടുള്ള ചായയും, തമിഴ് ശൈലിയിലുള്ള തനതായ രുചിക്കൂട്ടുകളോടെ വറുത്തെടുത്ത മൊരിഞ്ഞ വടകളും പലഹാരങ്ങളും ആളുകളിലേക്ക് എത്തിക്കുക എന്നതാണ് ഞങ്ങളുടെ ലക്ഷ്യം.
+          </p>
+          <p>
+            കേരളത്തിന്റെ നാടൻ ഊഷ്മളതയും തമിഴ്നാടൻ ചായക്കടകളുടെ സ്പെഷ്യൽ രുചിയും സമന്വയിക്കുന്ന ഇടമാണ് മണിവട. കടലപ്പരിപ്പും ഉള്ളിയും മൂത്ത പരിപ്പുവട മുതൽ, പഞ്ഞിപോലെ മൃദുവായ ഉഴുന്നുവടയും മധുരമൂറുന്ന പഴംപൊരിയും വരെ ഓരോ ദിവസവും പുതുമയോടെ തയാറാക്കുന്നു.
+          </p>
+          <p>
+            നിങ്ങളുടെ ചായസമയം ഏറ്റവും സന്തോഷകരവും തൃപ്തികരവുമാക്കാൻ സ്നേഹത്തോടെ മണിവടയിലേക്ക് സ്വാഗതം ചെയ്യുന്നു.
+          </p>
+        </div>
+
+        <div class="story-highlight-box">
+          <div class="story-highlight-icon">🍵</div>
+          <div>
+            <div class="story-highlight-title">സ്വാഭാവികമായ ചേരുവകൾ & തനത് പാചകരീതി</div>
+            <div class="story-highlight-desc">പരമ്പരാഗത ശൈലിയിൽ തയ്യാറാക്കുന്ന ചായയും പലഹാരങ്ങളും, മായമില്ലാത്ത ശുദ്ധമായ രുചി.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================================
+       7. WHY VISIT MANI VADA?
+       ============================================== -->
+  <section class="section section-white">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">പ്രത്യേകതകൾ</span>
+        <h2 class="section-title">എന്തുകൊണ്ട് മണിവട?</h2>
+        <p class="section-subtitle">
+          ഓരോ തവണ വരുമ്പോഴും ലഭിക്കുന്ന തനത് ചായക്കട അനുഭവവും നാടൻ സ്വാദും.
+        </p>
+        <div class="brand-ornament">
+          <span class="brand-ornament-line"></span>
+          <span class="brand-ornament-leaf">🌿</span>
+          <span class="brand-ornament-line reverse"></span>
+        </div>
+      </div>
+
+      <div class="why-grid">
+        <!-- Feature 1: ചൂടുള്ള ചായ -->
+        <article class="why-card">
+          <div class="why-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+              <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+              <line x1="6" y1="1" x2="6" y2="4"></line>
+              <line x1="10" y1="1" x2="10" y2="4"></line>
+              <line x1="14" y1="1" x2="14" y2="4"></line>
+            </svg>
+          </div>
+          <h3 class="why-title">ചൂടുള്ള ചായ</h3>
+          <p class="why-desc">
+            നല്ല പാൽ പതഞ്ഞടിച്ച് സുഗന്ധവ്യഞ്ജനങ്ങളുടെ മാന്ത്രികതയോടെ തിളപ്പിച്ചൊഴിക്കുന്ന തമിഴ്-കേരള ശൈലിയിലുള്ള സ്പെഷ്യൽ ചായ.
+          </p>
+        </article>
+
+        <!-- Feature 2: രുചികരമായ വട -->
+        <article class="why-card">
+          <div class="why-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <circle cx="12" cy="12" r="4"></circle>
+              <line x1="4.93" y1="4.93" x2="9.17" y2="9.17"></line>
+              <line x1="14.83" y1="14.83" x2="19.07" y2="19.07"></line>
+              <line x1="14.83" y1="9.17" x2="19.07" y2="4.93"></line>
+              <line x1="4.93" y1="19.07" x2="9.17" y2="14.83"></line>
+            </svg>
+          </div>
+          <h3 class="why-title">രുചികരമായ വട</h3>
+          <p class="why-desc">
+            പുറമെ നല്ല മൊരിവും ഉള്ളിൽ മൃദുത്വവുമുള്ള ഉഴുന്നുവടയും, നല്ല കരുകരുപ്പുള്ള പരിപ്പുവടയും ചൂടോടെ പഴംപൊരിയും.
+          </p>
+        </article>
+
+        <!-- Feature 3: സൗഹൃദപരമായ നാടൻ അന്തരീക്ഷം -->
+        <article class="why-card">
+          <div class="why-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <h3 class="why-title">സൗഹൃദപരമായ നാടൻ അന്തരീക്ഷം</h3>
+          <p class="why-desc">
+            ചായ കുടിക്കാനും സൗഹൃദ സംഭാഷണങ്ങളിൽ ഏർപ്പെടാനും തികച്ചും അനുയോജ്യമായ ഊഷ്മളവും സമാധാനപരവുമായ അന്തരീക്ഷം.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================================
+       8. FOOD AND SHOP GALLERY
+       ============================================== -->
+  <section class="section section-cream" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">ചായക്കട കാഴ്ചകൾ</span>
+        <h2 class="section-title">ചായക്കടയിലെ കാഴ്ചകൾ</h2>
+        <p class="section-subtitle">
+          പതഞ്ഞുയരുന്ന ചായയുടെയും തിളച്ച എണ്ണയിൽ നിന്നും വറുത്തെടുക്കുന്ന പലഹാരങ്ങളുടെയും മനോഹരമായ നിമിഷങ്ങൾ.
+        </p>
+        <div class="brand-ornament">
+          <span class="brand-ornament-line"></span>
+          <span class="brand-ornament-leaf">🌿</span>
+          <span class="brand-ornament-line reverse"></span>
+        </div>
+      </div>
+
+      <div class="gallery-grid">
+        <!-- Gallery 1: Tea Pouring -->
+        <div class="gallery-item gallery-item-lg" tabindex="0">
+          <img 
+            src="/images/gallery-tea-pour.jpg" 
+            alt="തമിഴ് മീറ്റർ ചായ പതച്ചൊഴിക്കുന്നു" 
+            class="gallery-image"
+            width="800"
+            height="500"
+          />
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-text">
+              <div class="gallery-overlay-title">തമിഴ് സ്റ്റൈൽ മീറ്റർ ചായ</div>
+              <div class="gallery-overlay-sub">പതഞ്ഞുപൊങ്ങുന്ന തിളച്ച പാൽചായയുടെ ചന്തം</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery 2: Uzhunnu Vada -->
+        <div class="gallery-item gallery-item-md" tabindex="0">
+          <img 
+            src="/images/menu-uzhunnu-vada.jpg" 
+            alt="മൊരിഞ്ഞ ഉഴുന്നുവട തേങ്ങാച്ചട്നിക്കൊപ്പം" 
+            class="gallery-image"
+            width="600"
+            height="500"
+          />
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-text">
+              <div class="gallery-overlay-title">മൊരിഞ്ഞ ഉഴുന്നുവട</div>
+              <div class="gallery-overlay-sub">വാഴയിലയിൽ വിളമ്പിയ ചൂടൻ ഉഴുന്നുവടയും തേങ്ങാച്ചട്നിയും</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery 3: Shop Ambiance -->
+        <div class="gallery-item gallery-item-sm" tabindex="0">
+          <img 
+            src="/images/gallery-tea-stall.jpg" 
+            alt="മണിവട കടയുടെ ഊഷ്മളമായ അന്തരീക്ഷം" 
+            class="gallery-image"
+            width="500"
+            height="350"
+          />
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-text">
+              <div class="gallery-overlay-title">കടയുടെ നാടൻ അന്തരീക്ഷം</div>
+              <div class="gallery-overlay-sub">സൗഹൃദവും സന്തോഷവും നിറഞ്ഞ ചായസമയം</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery 4: Parippu Vada -->
+        <div class="gallery-item gallery-item-sm" tabindex="0">
+          <img 
+            src="/images/menu-parippu-vada.jpg" 
+            alt="കരുകരുപ്പുള്ള പരിപ്പുവട" 
+            class="gallery-image"
+            width="500"
+            height="350"
+          />
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-text">
+              <div class="gallery-overlay-title">കരുകരുപ്പുള്ള പരിപ്പുവട</div>
+              <div class="gallery-overlay-sub">കറിവേപ്പിലയും പച്ചമുളകും ചേർത്ത നാടൻ രുചി</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery 5: Pazham Pori -->
+        <div class="gallery-item gallery-item-sm" tabindex="0">
+          <img 
+            src="/images/menu-pazham-pori.jpg" 
+            alt="മധുരമൂറുന്ന സ്പെഷ്യൽ പഴംപൊരി" 
+            class="gallery-image"
+            width="500"
+            height="350"
+          />
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-text">
+              <div class="gallery-overlay-title">സ്പെഷ്യൽ പഴംപൊരി</div>
+              <div class="gallery-overlay-sub">നേന്ത്രപ്പഴത്തിന്റെ മധുരവും മൊരിവും</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox-modal" id="galleryLightbox" role="dialog" aria-modal="true" aria-label="ഫോട്ടോ കാഴ്ച">
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightboxClose" aria-label="അടയ്ക്കുക">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <img src="" alt="" class="lightbox-img" id="lightboxImg" />
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+  </div>
+
+  <!-- ==============================================
+       9. VISIT OUR SHOP (CONTACT & LOCATION)
+       ============================================== -->
+  <section class="section section-white" id="visit">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">കട സന്ദർശിക്കൂ</span>
+        <h2 class="section-title">ഒരു ചായ കുടിക്കാൻ വരൂ!</h2>
+        <p class="section-subtitle">
+          ഞങ്ങളുടെ കടയിലേക്ക് നേരിട്ടെത്തി ചൂടുള്ള ചായയും മൊരിഞ്ഞ പലഹാരങ്ങളും ആസ്വദിക്കൂ.
+        </p>
+        <div class="brand-ornament">
+          <span class="brand-ornament-line"></span>
+          <span class="brand-ornament-leaf">🌿</span>
+          <span class="brand-ornament-line reverse"></span>
+        </div>
+      </div>
+
+      <div class="visit-wrapper">
+        <!-- Contact Details Left Panel -->
+        <div class="visit-info-panel">
+          <div>
+            <h3 class="visit-heading">മണിവടയിലേക്ക് സ്വാഗതം</h3>
+            <p class="visit-sub">
+              ഓരോ ദിവസവും പുതുമയോടെ തയാറാക്കുന്ന ചായയും വടകളും നിങ്ങളെ കാത്തിരിക്കുന്നു.
+            </p>
+
+            <!-- Details List (Opening hours, address, phone - configured centrally) -->
+            <div class="visit-details-list" id="visitDetailsList">
+              <!-- Rendered dynamically from src/data/shopConfig.js -->
+            </div>
+          </div>
+
+          <!-- Functional Action Buttons (Directions, Call, WhatsApp) -->
+          <div class="visit-actions-bar" id="visitActionsBar">
+            <!-- Rendered dynamically from src/data/shopConfig.js -->
+          </div>
+        </div>
+
+        <!-- Visual Media Right Panel -->
+        <div class="visit-media-panel">
+          <img 
+            src="/images/hero-food.jpg" 
+            alt="മണിവട ചായയും വടയും" 
+            class="visit-media-img"
+            width="600"
+            height="420"
+          />
+          <div class="visit-media-overlay">
+            <div class="visit-stamp">
+              <span>♨</span>
+              <span>തത്സമയം തയ്യാറാക്കുന്നു</span>
+            </div>
+            <div style="font-family: var(--font-malayalam); font-size: 1.5rem; font-weight: 700; color: #FFFFFF;">
+              ചൂട് ചൂട് വടേ
+            </div>
+            <div style="font-size: 0.95rem; color: var(--color-gold-light); margin-top: 4px;">
+              ഓരോ ചായസമയത്തിനും ഒരു നാടൻ സംതൃപ്തി
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================================
+       10. FOOTER
+       ============================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Brand Info -->
+        <div class="footer-brand">
+          <div class="footer-logo-wrap">
+            <img 
+              src="/images/mani-vada-logo.png" 
+              alt="മണിവട ലോഗോ" 
+              class="footer-logo-img"
+              width="76"
+              height="76"
+            />
+            <div>
+              <div class="footer-brand-title">മണിവട</div>
+              <div class="footer-brand-sub">மணி வடை</div>
+            </div>
+          </div>
+          
+          <!-- Malayalam Tagline -->
+          <div class="footer-tagline">ചൂട് ചൂട് വടേ</div>
+          
+          <p class="footer-about-text">
+            നല്ല ചായയും തമിഴ് ശൈലിയിലുള്ള രുചികരമായ വടയും. പരമ്പരാഗത തനിമയും സ്നേഹവും നിറഞ്ഞ സൗത്ത് ഇന്ത്യൻ ചായക്കട അനുഭവം.
+          </p>
+        </div>
+
+        <!-- Quick Navigation -->
+        <div class="footer-nav-col">
+          <h4 class="footer-col-title">പെട്ടെന്നുള്ള വഴികൾ</h4>
+          <ul class="footer-links-list">
+            <li><a href="#home" class="footer-link">ഹോം (Home)</a></li>
+            <li><a href="#menu" class="footer-link">ഞങ്ങളുടെ മെനു</a></li>
+            <li><a href="#about" class="footer-link">ഞങ്ങളെക്കുറിച്ച്</a></li>
+            <li><a href="#gallery" class="footer-link">കാഴ്ചകൾ</a></li>
+            <li><a href="#visit" class="footer-link">ഞങ്ങളെ കണ്ടെത്താം</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact & Hours -->
+        <div class="footer-nav-col">
+          <h4 class="footer-col-title">വിവരങ്ങൾ</h4>
+          <ul class="footer-links-list" id="footerContactDetails">
+            <li class="footer-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span>എല്ലാ ദിവസവും: രാവിലെ 6:00 മുതൽ രാത്രി 9:30 വരെ</span>
+            </li>
+          </ul>
+          <div style="margin-top: 20px;">
+            <a href="#visit" class="btn btn-secondary btn-sm" style="color: var(--color-warm-cream); border-color: var(--color-muted-gold); background: transparent;">
+              കടയിലേക്ക് സ്വാഗതം
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div class="footer-copyright">
+          © <span id="copyrightYear">2026</span> മണിവട (Mani Vada). സർവ അവകാശങ്ങളും നിക്ഷിപ്തം.
+        </div>
+        <div class="footer-credits">
+          Authentic South Indian Tea & Vada Kadai
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('copyrightYear').textContent = new Date().getFullYear();
+  </script>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

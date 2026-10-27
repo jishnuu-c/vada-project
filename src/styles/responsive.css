@@ -1,0 +1,185 @@
+/* RESPONSIVE DESIGN BREAKPOINTS */
+
+@media (max-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .hero-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-subheading {
+    justify-content: center;
+  }
+
+  .hero-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-cta-group {
+    justify-content: center;
+  }
+
+  .hero-features-bar {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .story-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .story-image {
+    height: 380px;
+  }
+
+  .visit-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .visit-media-panel {
+    min-height: 280px;
+    height: 320px;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+  }
+}
+
+@media (max-width: 860px) {
+  :root {
+    --nav-height: 74px;
+  }
+
+  .section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .nav-menu,
+  .nav-actions .btn-header-cta {
+    display: none;
+  }
+
+  .mobile-toggle {
+    display: flex;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+
+  .gallery-item-lg,
+  .gallery-item-md,
+  .gallery-item-sm {
+    grid-column: span 1;
+    height: 240px;
+  }
+
+  .gallery-item:first-child {
+    grid-column: span 2;
+    height: 300px;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .brand-logo-img {
+    height: 48px;
+    width: 48px;
+    border-radius: 10px;
+  }
+
+  .brand-malayalam-name {
+    font-size: 1.35rem;
+  }
+
+  .hero-section {
+    padding-top: 36px;
+    padding-bottom: 60px;
+  }
+
+  .hero-main-photo {
+    height: 300px;
+  }
+
+  .hero-floating-emblem {
+    width: 120px;
+    height: 120px;
+    top: -18px;
+    right: -8px;
+    border-radius: 16px;
+    padding: 4px;
+  }
+
+  .hero-floating-emblem img {
+    border-radius: 12px;
+  }
+
+  .hero-floating-pill {
+    left: 10px;
+    bottom: 14px;
+    padding: 8px 14px;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-cta-group .btn {
+    width: 100%;
+  }
+
+  .menu-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-item-lg,
+  .gallery-item-md,
+  .gallery-item-sm,
+  .gallery-item:first-child {
+    grid-column: span 1;
+    height: 230px;
+  }
+
+  .visit-info-panel {
+    padding: 28px 20px;
+  }
+
+  .visit-actions-bar {
+    flex-direction: column;
+  }
+
+  .visit-actions-bar .btn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "mani-vada-site",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Mani Vada - South Indian Tea & Vada Shop Website",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0"
+  }
+}
